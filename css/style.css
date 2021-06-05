@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 /*******************************/
 /********* General CSS *********/
 /*******************************/
 body {
     color: #666666;
     background: #dddddd;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Kanit';
     font-weight: 400;
 }
 
@@ -46,7 +48,7 @@ a:focus {
     position: fixed;
     display: none;
     background: #165efc;
-    color: #121518;
+    color: #ffffff;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -59,8 +61,8 @@ a:focus {
 }
 
 .back-to-top:hover {
-    color: #fdbe33;
-    background: #121518;
+    color: #165efc;
+    background: #ffffff;
 }
 
 .back-to-top i {
@@ -78,7 +80,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #fdbe33;
+    background: #465cff;
 }
 
 .top-bar .logo {
@@ -89,7 +91,7 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: 0;
-    color: #030f27;
+    color: #ffffff;
     font-size: 27px;
     line-height: 60px;
     font-weight: 700;
@@ -115,7 +117,7 @@ a:focus {
 
 .top-bar .top-bar-icon [class^="flaticon-"]::before {
     margin: 0;
-    color: #030f27;
+    color: #ffffff;
     font-size: 40px;
 }
 
@@ -125,14 +127,14 @@ a:focus {
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
-    color: #030f27;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 400;
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
-    color: #030f27;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 400;
 }
@@ -155,7 +157,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #fdbe33;
+    background: #030f27;
     transition: .3s;
 }
 
@@ -187,8 +189,9 @@ a:focus {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fdbe33;
+    color: #465cff;
     transition: none;
+    font-weight: 600;
 }
 
 .nav-bar .dropdown-menu {
@@ -205,9 +208,9 @@ a:focus {
 }
 
 .nav-bar .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: #ffffff;
+    background: #465cff;
+    border-color: #465cff;
 }
 
 @media (min-width: 992px) {
@@ -330,9 +333,9 @@ a:focus {
 }
 
 .carousel .carousel-caption .btn:hover {
-    color: #030f27;
-    background: #fdbe33;
-    border-color: #fdbe33;
+    color: #ffffff;
+    background: #465cff;
+    border-color: #ffffff;
 }
 
 @media (max-width: 767.98px) {
@@ -506,7 +509,7 @@ a:focus {
     
 .feature .col-md-12:nth-child(2n) {
     color: #030f27;
-    background: #fdbe33;
+    background: #465cff;
 }
 
 .feature .feature-item {
@@ -550,13 +553,13 @@ a:focus {
 }
 
 .feature .col-md-12:nth-child(2n) .feature-icon::after {
-    background: #fdbe33;
+    background: #465cff;
 }
 
 .feature .feature-icon [class^="flaticon-"]::before {
     position: relative;
     margin: 0;
-    color: #fdbe33;
+    color: #ffffff;
     font-size: 60px;
     line-height: 60px;
     z-index: 3;
@@ -568,14 +571,14 @@ a:focus {
 
 .feature .feature-text h3 {
     margin: 0 0 10px 0;
-    color: #fdbe33;
+    color: #ffffff;
     font-size: 25px;
     font-weight: 600;
 }
 
 .feature .feature-text p {
     margin: 0;
-    color: #fdbe33;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
 }
@@ -583,7 +586,7 @@ a:focus {
 .feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
 .feature .col-md-12:nth-child(2n) h3,
 .feature .col-md-12:nth-child(2n) p {
-    color: #030f27;
+    color: #ffffff;
 }
 
 
@@ -622,15 +625,16 @@ a:focus {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    color: #030f27;
+    color: #ffffff;
     border-radius: 0;
-    background: #fdbe33;
+    background: #465cff;
     transition: .3s;
 }
 
 .about .about-text a.btn:hover {
-    color: #fdbe33;
-    background: #030f27;
+    color: #465cff;
+    background: #ffffff;
+    border: 1px solid #465cff;
 }
 
 @media (max-width: 767.98px) {
@@ -668,13 +672,13 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #fdbe33);
+    background-image: linear-gradient(#ffffff, #465cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .fact .fact-right .fact-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, #030f27);
+    background-image: linear-gradient(#ffffff, #465cff);
 }
 
 .fact .fact-left,
@@ -696,17 +700,17 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #fdbe33;
+    color: #ffffff;
     background: #030f27;
 }
 
 .fact .fact-right {
-    color: #030f27;
-    background: #fdbe33;
+    color: #ffffff;
+    background: #465cff;
 }
 
 .fact .fact-left h2 {
-    color: #fdbe33;
+    color: #ffffff;
 }
 
 
@@ -775,7 +779,7 @@ a:focus {
     width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
-    color: #fdbe33;
+    color: #ffffff;
     text-align: left;
     overflow: hidden;
     white-space: nowrap;
@@ -793,7 +797,7 @@ a:focus {
     line-height: 60px;
     font-weight: 100;
     color: #030f27;
-    background: #fdbe33;
+    background: #465cff;
     border-radius: 0;
     transition: .3s;
 }
@@ -2075,7 +2079,7 @@ a:focus {
     padding-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
-    color: #fdbe33;
+    color: #465cff;
 }
 
 .footer h2::after {
@@ -2085,7 +2089,7 @@ a:focus {
     height: 2px;
     left: 0;
     bottom: 0;
-    background: #fdbe33;
+    background: #465cff;
 }
 
 .footer .footer-link a {
@@ -2104,7 +2108,7 @@ a:focus {
 }
 
 .footer .footer-link a:hover {
-    color: #fdbe33;
+    color: #465cff;
     letter-spacing: 1px;
 }
 
@@ -2134,8 +2138,8 @@ a:focus {
 }
 
 .footer .footer-social a:hover {
-    background: #fdbe33;
-    border-color: #fdbe33;
+    background: #465cff;
+    border-color: #465cff;
 }
 
 .footer .footer-social a:hover i {
@@ -2217,7 +2221,7 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #fdbe33;
+    color: #ffffff;
     font-weight: 500;
     letter-spacing: 1px;
 }
